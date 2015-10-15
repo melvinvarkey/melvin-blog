@@ -1,0 +1,341 @@
+mel@mel:~$ 
+mel@mel:~$ 
+mel@mel:~$ 
+mel@mel:~$ cd jekyll/
+mel@mel:~/jekyll$ ls
+mel@mel:~/jekyll$ 
+mel@mel:~/jekyll$ gem install jekyll
+Fetching: liquid-2.6.3.gem (100%)
+ERROR:  While executing gem ... (Errno::EACCES)
+    Permission denied - /var/lib/gems
+mel@mel:~/jekyll$ sudo gem install jekyll
+[sudo] password for mel: 
+Fetching: liquid-2.6.3.gem (100%)
+Fetching: kramdown-1.9.0.gem (100%)
+Fetching: mercenary-0.3.5.gem (100%)
+Fetching: safe_yaml-1.0.4.gem (100%)
+Fetching: colorator-0.1.gem (100%)
+Fetching: yajl-ruby-1.2.1.gem (100%)
+Building native extensions.  This could take a while...
+ERROR:  Error installing jekyll:
+	ERROR: Failed to build gem native extension.
+
+        /usr/bin/ruby1.9.1 extconf.rb
+/usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require': cannot load such file -- mkmf (LoadError)
+	from /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from extconf.rb:1:in `<main>'
+
+
+Gem files will remain installed in /var/lib/gems/1.9.1/gems/yajl-ruby-1.2.1 for inspection.
+Results logged to /var/lib/gems/1.9.1/gems/yajl-ruby-1.2.1/ext/yajl/gem_make.out
+mel@mel:~/jekyll$ Results logged to /var/lib/gems/1.9.1/gems/yajl-ruby-1.2.1/ext/yajl/gem_make.out
+Results: command not found
+mel@mel:~/jekyll$ jekyll new my-awesome-site
+The program 'jekyll' is currently not installed. You can install it by typing:
+sudo apt-get install jekyll
+mel@mel:~/jekyll$ sudo apt-get install jekyll
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  kde-l10n-engb
+Use 'apt-get autoremove' to remove it.
+The following extra packages will be installed:
+  libtamuanova-0.2 plotutils python-pygments ruby-albino ruby-classifier
+  ruby-coderay ruby-directory-watcher ruby-fast-stemmer ruby-gsl ruby-json
+  ruby-kramdown ruby-liquid ruby-maruku ruby-mysql ruby-narray ruby-pg
+  ruby-posix-spawn ruby-sequel ruby-sequel-pg ruby-stringex
+Suggested packages:
+  ttf-bitstream-vera
+The following NEW packages will be installed:
+  jekyll libtamuanova-0.2 plotutils python-pygments ruby-albino
+  ruby-classifier ruby-coderay ruby-directory-watcher ruby-fast-stemmer
+  ruby-gsl ruby-json ruby-kramdown ruby-liquid ruby-maruku ruby-mysql
+  ruby-narray ruby-pg ruby-posix-spawn ruby-sequel ruby-sequel-pg
+  ruby-stringex
+0 upgraded, 21 newly installed, 0 to remove and 46 not upgraded.
+Need to get 3,435 kB of archives.
+After this operation, 15.1 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-liquid all 2.6.1-1 [22.8 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-maruku all 0.6.0-2 [73.9 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-posix-spawn amd64 0.3.8-1 [23.3 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu/ trusty/main python-pygments all 1.6+dfsg-1ubuntu1 [519 kB]
+Get:5 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-albino all 1.3.3-2 [5,646 B]
+Get:6 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-coderay all 1.1.0-1 [89.6 kB]
+Get:7 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-stringex all 2.0.3-1 [82.7 kB]
+Get:8 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-kramdown all 1.2.0-1 [126 kB]
+Get:9 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-fast-stemmer amd64 1.0.2-1 [8,972 B]
+Get:10 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-classifier all 1.3.3-1 [14.8 kB]
+Get:11 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-directory-watcher all 1.5.1-1 [24.6 kB]
+Get:12 http://in.archive.ubuntu.com/ubuntu/ trusty/universe jekyll all 0.11.2-1 [31.4 kB]
+Get:13 http://in.archive.ubuntu.com/ubuntu/ trusty/universe libtamuanova-0.2 amd64 0.2-3 [8,348 B]
+Get:14 http://in.archive.ubuntu.com/ubuntu/ trusty/universe plotutils amd64 2.6-3ubuntu1 [666 kB]
+Get:15 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-narray amd64 0.6.0.1-4 [95.9 kB]
+Get:16 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-gsl amd64 1.15.3+dfsg-1 [710 kB]
+Get:17 http://in.archive.ubuntu.com/ubuntu/ trusty/main ruby-json amd64 1.8.0-1build1 [49.0 kB]
+Get:18 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-mysql amd64 2.8.2+gem2deb-4 [47.9 kB]
+Get:19 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-pg amd64 0.17.0-1 [113 kB]
+Get:20 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-sequel all 4.1.1-1 [691 kB]
+Get:21 http://in.archive.ubuntu.com/ubuntu/ trusty/universe ruby-sequel-pg amd64 1.6.8-1 [31.2 kB]
+Fetched 3,435 kB in 30s (114 kB/s)                                             
+Selecting previously unselected package ruby-liquid.
+(Reading database ... 466862 files and directories currently installed.)
+Preparing to unpack .../ruby-liquid_2.6.1-1_all.deb ...
+Unpacking ruby-liquid (2.6.1-1) ...
+Selecting previously unselected package ruby-maruku.
+Preparing to unpack .../ruby-maruku_0.6.0-2_all.deb ...
+Unpacking ruby-maruku (0.6.0-2) ...
+Selecting previously unselected package ruby-posix-spawn.
+Preparing to unpack .../ruby-posix-spawn_0.3.8-1_amd64.deb ...
+Unpacking ruby-posix-spawn (0.3.8-1) ...
+Selecting previously unselected package python-pygments.
+Preparing to unpack .../python-pygments_1.6+dfsg-1ubuntu1_all.deb ...
+Unpacking python-pygments (1.6+dfsg-1ubuntu1) ...
+Selecting previously unselected package ruby-albino.
+Preparing to unpack .../ruby-albino_1.3.3-2_all.deb ...
+Unpacking ruby-albino (1.3.3-2) ...
+Selecting previously unselected package ruby-coderay.
+Preparing to unpack .../ruby-coderay_1.1.0-1_all.deb ...
+Unpacking ruby-coderay (1.1.0-1) ...
+Selecting previously unselected package ruby-stringex.
+Preparing to unpack .../ruby-stringex_2.0.3-1_all.deb ...
+Unpacking ruby-stringex (2.0.3-1) ...
+Selecting previously unselected package ruby-kramdown.
+Preparing to unpack .../ruby-kramdown_1.2.0-1_all.deb ...
+Unpacking ruby-kramdown (1.2.0-1) ...
+Selecting previously unselected package ruby-fast-stemmer.
+Preparing to unpack .../ruby-fast-stemmer_1.0.2-1_amd64.deb ...
+Unpacking ruby-fast-stemmer (1.0.2-1) ...
+Selecting previously unselected package ruby-classifier.
+Preparing to unpack .../ruby-classifier_1.3.3-1_all.deb ...
+Unpacking ruby-classifier (1.3.3-1) ...
+Selecting previously unselected package ruby-directory-watcher.
+Preparing to unpack .../ruby-directory-watcher_1.5.1-1_all.deb ...
+Unpacking ruby-directory-watcher (1.5.1-1) ...
+Selecting previously unselected package jekyll.
+Preparing to unpack .../jekyll_0.11.2-1_all.deb ...
+Unpacking jekyll (0.11.2-1) ...
+Selecting previously unselected package libtamuanova-0.2.
+Preparing to unpack .../libtamuanova-0.2_0.2-3_amd64.deb ...
+Unpacking libtamuanova-0.2 (0.2-3) ...
+Selecting previously unselected package plotutils.
+Preparing to unpack .../plotutils_2.6-3ubuntu1_amd64.deb ...
+Unpacking plotutils (2.6-3ubuntu1) ...
+Selecting previously unselected package ruby-narray.
+Preparing to unpack .../ruby-narray_0.6.0.1-4_amd64.deb ...
+Unpacking ruby-narray (0.6.0.1-4) ...
+Selecting previously unselected package ruby-gsl.
+Preparing to unpack .../ruby-gsl_1.15.3+dfsg-1_amd64.deb ...
+Unpacking ruby-gsl (1.15.3+dfsg-1) ...
+Selecting previously unselected package ruby-json.
+Preparing to unpack .../ruby-json_1.8.0-1build1_amd64.deb ...
+Unpacking ruby-json (1.8.0-1build1) ...
+Selecting previously unselected package ruby-mysql.
+Preparing to unpack .../ruby-mysql_2.8.2+gem2deb-4_amd64.deb ...
+Unpacking ruby-mysql (2.8.2+gem2deb-4) ...
+Selecting previously unselected package ruby-pg.
+Preparing to unpack .../ruby-pg_0.17.0-1_amd64.deb ...
+Unpacking ruby-pg (0.17.0-1) ...
+Selecting previously unselected package ruby-sequel.
+Preparing to unpack .../ruby-sequel_4.1.1-1_all.deb ...
+Unpacking ruby-sequel (4.1.1-1) ...
+Selecting previously unselected package ruby-sequel-pg.
+Preparing to unpack .../ruby-sequel-pg_1.6.8-1_amd64.deb ...
+Unpacking ruby-sequel-pg (1.6.8-1) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for doc-base (0.10.5) ...
+Processing 1 added doc-base file...
+Processing triggers for install-info (5.2.0.dfsg.1-2) ...
+Setting up ruby-liquid (2.6.1-1) ...
+Setting up ruby-maruku (0.6.0-2) ...
+Setting up ruby-posix-spawn (0.3.8-1) ...
+Setting up python-pygments (1.6+dfsg-1ubuntu1) ...
+Setting up ruby-albino (1.3.3-2) ...
+Setting up ruby-coderay (1.1.0-1) ...
+Setting up ruby-stringex (2.0.3-1) ...
+Setting up ruby-kramdown (1.2.0-1) ...
+Setting up ruby-fast-stemmer (1.0.2-1) ...
+Setting up ruby-classifier (1.3.3-1) ...
+Setting up ruby-directory-watcher (1.5.1-1) ...
+Setting up jekyll (0.11.2-1) ...
+Setting up libtamuanova-0.2 (0.2-3) ...
+Setting up plotutils (2.6-3ubuntu1) ...
+Setting up ruby-narray (0.6.0.1-4) ...
+Setting up ruby-gsl (1.15.3+dfsg-1) ...
+Setting up ruby-json (1.8.0-1build1) ...
+Setting up ruby-mysql (2.8.2+gem2deb-4) ...
+Setting up ruby-pg (0.17.0-1) ...
+Setting up ruby-sequel (4.1.1-1) ...
+Setting up ruby-sequel-pg (1.6.8-1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.6) ...
+mel@mel:~/jekyll$ The Jekyll gem makes a jekyll executable available to you in your Terminal window. You can use this command in a number of ways:^C
+mel@mel:~/jekyll$ ^C
+mel@mel:~/jekyll$ ^C
+mel@mel:~/jekyll$ ^C
+mel@mel:~/jekyll$ 
+mel@mel:~/jekyll$ 
+mel@mel:~/jekyll$ 
+mel@mel:~/jekyll$ 
+mel@mel:~/jekyll$ 
+mel@mel:~/jekyll$ 
+mel@mel:~/jekyll$  jekyll serve
+/usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require': iconv will be deprecated in the future, use String#encode instead.
+WARNING: Could not read configuration. Using defaults (and options).
+	No such file or directory - /home/mel/jekyll/_config.yml
+Building site: /home/mel/jekyll -> serve
+Successfully generated site: /home/mel/jekyll -> serve
+mel@mel:~/jekyll$ jekyll new my-awesome-site
+/usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require': iconv will be deprecated in the future, use String#encode instead.
+WARNING: Could not read configuration. Using defaults (and options).
+	No such file or directory - new/_config.yml
+Building site: new -> my-awesome-site
+/usr/lib/ruby/vendor_ruby/jekyll/site.rb:126:in `chdir': No such file or directory - /home/mel/jekyll/new/ (Errno::ENOENT)
+	from /usr/lib/ruby/vendor_ruby/jekyll/site.rb:126:in `read_directories'
+	from /usr/lib/ruby/vendor_ruby/jekyll/site.rb:98:in `read'
+	from /usr/lib/ruby/vendor_ruby/jekyll/site.rb:38:in `process'
+	from /usr/bin/jekyll:250:in `<main>'
+mel@mel:~/jekyll$ ls
+mel@mel:~/jekyll$ 
+mel@mel:~/jekyll$ 
+mel@mel:~/jekyll$ 
+mel@mel:~/jekyll$ 
+mel@mel:~/jekyll$ 
+mel@mel:~/jekyll$ 
+mel@mel:~/jekyll$ 
+mel@mel:~/jekyll$ jekyll new my-awesome-site
+/usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require': iconv will be deprecated in the future, use String#encode instead.
+WARNING: Could not read configuration. Using defaults (and options).
+	No such file or directory - new/_config.yml
+Building site: new -> my-awesome-site
+/usr/lib/ruby/vendor_ruby/jekyll/site.rb:126:in `chdir': No such file or directory - /home/mel/jekyll/new/ (Errno::ENOENT)
+	from /usr/lib/ruby/vendor_ruby/jekyll/site.rb:126:in `read_directories'
+	from /usr/lib/ruby/vendor_ruby/jekyll/site.rb:98:in `read'
+	from /usr/lib/ruby/vendor_ruby/jekyll/site.rb:38:in `process'
+	from /usr/bin/jekyll:250:in `<main>'
+mel@mel:~/jekyll$ sudo jekyll new my-awesome-site
+/usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require': iconv will be deprecated in the future, use String#encode instead.
+WARNING: Could not read configuration. Using defaults (and options).
+	No such file or directory - new/_config.yml
+Building site: new -> my-awesome-site
+/usr/lib/ruby/vendor_ruby/jekyll/site.rb:126:in `chdir': No such file or directory - /home/mel/jekyll/new/ (Errno::ENOENT)
+	from /usr/lib/ruby/vendor_ruby/jekyll/site.rb:126:in `read_directories'
+	from /usr/lib/ruby/vendor_ruby/jekyll/site.rb:98:in `read'
+	from /usr/lib/ruby/vendor_ruby/jekyll/site.rb:38:in `process'
+	from /usr/bin/jekyll:250:in `<main>'
+mel@mel:~/jekyll$ jekyll
+/usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require': iconv will be deprecated in the future, use String#encode instead.
+WARNING: Could not read configuration. Using defaults (and options).
+	No such file or directory - /home/mel/jekyll/_config.yml
+Building site: /home/mel/jekyll -> /home/mel/jekyll/_site
+Successfully generated site: /home/mel/jekyll -> /home/mel/jekyll/_site
+mel@mel:~/jekyll$ gem install jekyll
+^CERROR:  Interrupted
+mel@mel:~/jekyll$ sudo gem install jekyll
+Building native extensions.  This could take a while...
+ERROR:  Error installing jekyll:
+	ERROR: Failed to build gem native extension.
+
+        /usr/bin/ruby1.9.1 extconf.rb
+/usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require': cannot load such file -- mkmf (LoadError)
+	from /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from extconf.rb:1:in `<main>'
+
+
+Gem files will remain installed in /var/lib/gems/1.9.1/gems/yajl-ruby-1.2.1 for inspection.
+Results logged to /var/lib/gems/1.9.1/gems/yajl-ruby-1.2.1/ext/yajl/gem_make.out
+mel@mel:~/jekyll$ jekyll new myblog
+/usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require': iconv will be deprecated in the future, use String#encode instead.
+WARNING: Could not read configuration. Using defaults (and options).
+	No such file or directory - new/_config.yml
+Building site: new -> myblog
+/usr/lib/ruby/vendor_ruby/jekyll/site.rb:126:in `chdir': No such file or directory - /home/mel/jekyll/new/ (Errno::ENOENT)
+	from /usr/lib/ruby/vendor_ruby/jekyll/site.rb:126:in `read_directories'
+	from /usr/lib/ruby/vendor_ruby/jekyll/site.rb:98:in `read'
+	from /usr/lib/ruby/vendor_ruby/jekyll/site.rb:38:in `process'
+	from /usr/bin/jekyll:250:in `<main>'
+mel@mel:~/jekyll$ sudo apt-get install ruby-dev
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  kde-l10n-engb
+Use 'apt-get autoremove' to remove it.
+The following extra packages will be installed:
+  ruby1.9.1-dev
+The following NEW packages will be installed:
+  ruby-dev ruby1.9.1-dev
+0 upgraded, 2 newly installed, 0 to remove and 46 not upgraded.
+Need to get 876 kB of archives.
+After this operation, 4,228 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main ruby1.9.1-dev amd64 1.9.3.484-2ubuntu1.2 [871 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/main ruby-dev all 1:1.9.3.4 [4,660 B]
+Fetched 876 kB in 0s (6,336 kB/s)    
+Selecting previously unselected package ruby1.9.1-dev.
+(Reading database ... 468646 files and directories currently installed.)
+Preparing to unpack .../ruby1.9.1-dev_1.9.3.484-2ubuntu1.2_amd64.deb ...
+Unpacking ruby1.9.1-dev (1.9.3.484-2ubuntu1.2) ...
+Selecting previously unselected package ruby-dev.
+Preparing to unpack .../ruby-dev_1%3a1.9.3.4_all.deb ...
+Unpacking ruby-dev (1:1.9.3.4) ...
+Setting up ruby1.9.1-dev (1.9.3.484-2ubuntu1.2) ...
+Setting up ruby-dev (1:1.9.3.4) ...
+mel@mel:~/jekyll$ gem install jekyll
+Fetching: yajl-ruby-1.2.1.gem (100%)
+ERROR:  While executing gem ... (Gem::FilePermissionError)
+    You don't have write permissions into the /var/lib/gems/1.9.1 directory.
+mel@mel:~/jekyll$ sudo gem install jekyll
+Building native extensions.  This could take a while...
+Fetching: posix-spawn-0.3.11.gem (100%)
+Building native extensions.  This could take a while...
+Fetching: pygments.rb-0.6.3.gem (100%)
+Fetching: redcarpet-3.3.3.gem (100%)
+Building native extensions.  This could take a while...
+Fetching: blankslate-2.1.2.4.gem (100%)
+Fetching: parslet-1.5.0.gem (100%)
+Fetching: toml-0.1.2.gem (100%)
+Fetching: jekyll-paginate-1.1.0.gem (100%)
+Fetching: jekyll-gist-1.3.4.gem (100%)
+Fetching: coffee-script-source-1.9.1.1.gem (100%)
+Fetching: execjs-2.6.0.gem (100%)
+Fetching: coffee-script-2.4.1.gem (100%)
+Fetching: jekyll-coffeescript-1.0.1.gem (100%)
+Fetching: sass-3.4.19.gem (100%)
+Fetching: jekyll-sass-converter-1.3.0.gem (100%)
+Fetching: rb-fsevent-0.9.6.gem (100%)
+Fetching: ffi-1.9.10.gem (100%)
+Building native extensions.  This could take a while...
+Fetching: rb-inotify-0.9.5.gem (100%)
+Fetching: listen-3.0.3.gem (100%)
+Fetching: jekyll-watch-1.3.0.gem (100%)
+Fetching: fast-stemmer-1.0.2.gem (100%)
+Building native extensions.  This could take a while...
+Fetching: classifier-reborn-2.0.3.gem (100%)
+Fetching: jekyll-2.5.3.gem (100%)
+Successfully installed yajl-ruby-1.2.1
+Successfully installed posix-spawn-0.3.11
+Successfully installed pygments.rb-0.6.3
+Successfully installed redcarpet-3.3.3
+Successfully installed blankslate-2.1.2.4
+Successfully installed parslet-1.5.0
+Successfully installed toml-0.1.2
+Successfully installed jekyll-paginate-1.1.0
+Successfully installed jekyll-gist-1.3.4
+Successfully installed coffee-script-source-1.9.1.1
+Successfully installed execjs-2.6.0
+Successfully installed coffee-script-2.4.1
+Successfully installed jekyll-coffeescript-1.0.1
+Successfully installed sass-3.4.19
+Successfully installed jekyll-sass-converter-1.3.0
+Successfully installed rb-fsevent-0.9.6
+Successfully installed ffi-1.9.10
+Successfully installed rb-inotify-0.9.5
+Successfully installed listen-3.0.3
+Successfully installed jekyll-watch-1.3.0
+Successfully installed fast-stemmer-1.0.2
+Successfully installed classifier-reborn-2.0.3
+Successfully installed jekyll-2.5.3
+23 gems installed
+mel@mel:~/jekyll$ 
+
