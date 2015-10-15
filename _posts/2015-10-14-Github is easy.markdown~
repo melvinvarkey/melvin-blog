@@ -37,12 +37,9 @@ After all these, permanently push the files to the online repository.
 To change the origin,
 `$ git checkout -b <git-repo-address>`
 
-{% highlight bash %}
-def print_hi(name)
-  puts "Hi, #{name}"
-print 'melvin is using jekyll'
-{% endhighlight %}
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+```
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'```
 
 [gitlink]:     http://github.com
