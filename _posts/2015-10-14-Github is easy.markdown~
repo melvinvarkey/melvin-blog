@@ -38,8 +38,13 @@ To change the origin,
 `$ git checkout -b <git-repo-address>`
 
 
-```
+```python
 git config --global credential.helper cache
-git config --global credential.helper 'cache --timeout=3600'```
+git config --global credential.helper 'cache --timeout=3600'
+```
+```bash
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+```
 
 [gitlink]:     http://github.com
